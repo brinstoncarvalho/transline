@@ -98,14 +98,15 @@ p{
 .header{
 	text-align:center;
 	/*background:url(../img/pw_maze_black_2X.png) left top repeat;*/
-	background:url(../img/header-bg.png);
-	background-size: inherit;
+	/*background:url(../img/header-bg.png);*/
+	background:url(../img/landing-pg.jpg);
+	background-size: cover;
 	background-repeat: repeat;
 	padding:120px 0;
 }
 .logo{
-	width:240px;
-	margin:0 auto 35px;
+	width:280px;
+	margin:0 auto 20px;
 }
 .header h1{
 	font-family: 'Montserrat',sans-serif;
@@ -142,9 +143,8 @@ p{
 }
 
 .start-button li a{
-color: #fff;
+	color: #fff;
 }
-
 
 .link{
 	padding:15px 35px;
@@ -370,7 +370,7 @@ color: #fff;
 }
 
 .Portfolio-box img:hover {
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 	cursor: default;
 }
 
@@ -400,6 +400,7 @@ img {
 
 .main-section.paddind{
 	padding-bottom:60px;
+
 }
 
 /* Clients
@@ -456,19 +457,21 @@ img {
 	text-align:center;
 	font-size:27px;
 	color:#7cc576;
-	cursor: pointer;
+	cursor: default;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
 .quote-right:hover{
-color: #fff;
-border: 2px solid #fff;
+	color: #fff;
+	border: 2px solid #fff;
+	cursor: default;
 }
 
 .c-logo-part{
-	background:#7cc576;
+	/*background:#7cc576;*/
+	background: #fafafa;
 	padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -618,7 +621,7 @@ border: 2px solid #fff;
 }
 
 .main-section.contact{
-	background:url(../img/bg-map.png) left 190px no-repeat;
+	/*background:url(../img/bg-map.png) left 190px no-repeat;*/
 }
 .contact-info-box{
 	font-size:15px;
@@ -871,4 +874,35 @@ border: 2px solid #fff;
 .delay-12s { 
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
+}
+
+.text-grey{color: #7E7E7B;}
+.align-center{text-align: center;}
+.bg-white{background-color: white}
+
+.transline-group{
+	
+	
+	padding:40px 0;
+}
+
+.custom-text{
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	color:#121212;
+	margin:0;
+}
+
+.portfolio{
+	background:url(../img/about-bg-img.jpg) center center no-repeat;
+	background-size:cover;
+	padding:55px 0;
+}
+
+.global-reach{
+	background:url(../img/world-map.png) center center no-repeat;
+	background-size:cover;
+	padding:55px 0;
 }
