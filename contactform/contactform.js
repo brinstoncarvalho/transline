@@ -4,6 +4,7 @@ jQuery(document).ready(function($) {
 
     //Contact
     $('form.contactForm').submit(function(){
+        //alert("this is a test message");
 
         var f = $(this).find('.form-group'), 
         ferror = false, 
@@ -78,15 +79,31 @@ jQuery(document).ready(function($) {
         });
         if( ferror ) return false; 
         else var str = $(this).serialize();		
+            var send_name = $("#name").val();
+            var send_email = $("#email").val();
+            var send_subject = $("#subject").val();
+            var send_message = $("#message").val();
+            
             $.ajax({
                 type: "POST",
                 url: "contactform/contactform.php",
-                data: str,
+                //data: str,
+                data: "name=" + send_name + "&email=" + send_email + "&subject=" + send_subject + "&message=" + send_message,
                 success: function(msg){
-                   // alert(msg);
+                    //alert(msg);
                     if(msg == 'OK') {
-                        $("#sendmessage").addClass("show");			
-                        $("#errormessage").removeClass("show");	
+                        //$("#sendmessage").addClass("show");			
+                        //$("#errormessage").removeClass("show");	
+                        alert("Message Sent Successfully. Thank you.");
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#subject').val('');
+                        $('#message').val('');
+
+                        var send_name = "";
+                        var send_email = "";
+                        var send_subject = "";
+                        var send_message = "";
                     }
                     else {
                         $("#sendmessage").removeClass("show");
@@ -96,6 +113,9 @@ jQuery(document).ready(function($) {
                     
                 }
             });
+            
+
+
         return false;
     });
 
