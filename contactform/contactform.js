@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
                     if(msg == 'OK') {
                         //$("#sendmessage").addClass("show");			
                         //$("#errormessage").removeClass("show");	
-                        alert("Message Sent Successfully. Thank you.");
+                        //alert("Message Sent Successfully. Thank you.");
                         $('#name').val('');
                         $('#email').val('');
                         $('#subject').val('');
