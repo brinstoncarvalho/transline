@@ -5,7 +5,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$EmailTo = "brinston.carvalho@gmail.com";
+$EmailTo = "cedric.vaz@gmail.com";
 $Subject = "Website Message: " . $subject;
 
 $Body .= "Name: ";
